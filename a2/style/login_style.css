@@ -1,0 +1,138 @@
+html {
+    scroll-behavior: smooth;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-areas: 
+    "header header header"
+    "nav nav nav"
+    "main main main"
+    "footer footer footer";
+    gap: 10px;
+    background-color:#33CCFF;
+}
+
+.grid-container header {
+    grid-area: header;
+    background-color:#00AAFF;
+    text-align: center;
+    padding:10px 100px;
+}
+
+header h1 {
+    display: inline;
+    font-family: 'Comfortaa',Arial,sans-serif;
+    color: #FFD400;
+    font-size: 70px;
+}
+
+header img {
+    height: 80px;
+    vertical-align: middle;
+    float: left;
+}
+
+.grid-container nav {
+    grid-area: nav;
+    font-family: 'Comfortaa',Arial,sans-serif;
+    font-weight: bold;
+    background-color:#FFD400;
+    text-align: center;
+    position: sticky;
+    top: 0;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 15px 0;
+}
+
+nav li {
+    display: inline;
+}
+
+nav li a {
+    text-decoration: none;
+    color: black;
+    padding: 15px 10px;
+}
+
+nav li a:hover:not(.active) {
+    background-color: #33CCFF;
+    transition: 0.5s;
+}
+
+.active {
+    background-color: #33CCFF;
+}
+
+.grid-container main {
+    grid-area: main;
+    background-color: white;
+}
+
+.gradient-custom-2 {
+    /* fallback for old browsers */
+    background: rgb(0,170,255);
+    
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: -webkit-linear-gradient(25% 50% 75%, rgba(0,170,255,1) rgba(134,192,121,1) rgba(255,212,0,1));
+    
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: linear-gradient(90deg, rgba(0,170,255,1) 25%, rgba(134,192,121,1) 50%, rgba(255,212,0,1) 75%);
+    }
+    
+@media (min-width: 768px) {
+    .gradient-form {
+    height: 100vh !important;
+    }
+}
+
+@media (min-width: 769px) {
+    .gradient-custom-2 {
+    border-top-right-radius: .3rem;
+    border-bottom-right-radius: .3rem;
+    }
+}
+
+.error {
+    color: #FF0000;
+}
+
+.success {
+    color: green;
+}
+
+.grid-container footer {
+    grid-area: footer;
+    background-color:#006EE9;
+}
+
+footer span {
+    color: white;
+    vertical-align: middle;
+    margin-left: 100px;
+}
+
+footer ul {
+    list-style-type: none;
+    float: right;
+    margin-right: 100px;
+}
+
+footer li {
+    display: inline;
+}
+
+footer li a {
+    text-decoration: none;
+    color: white;
+    padding: 0 5px;
+    border-left: solid 1px white;
+}
+
+footer li:first-child a {
+    border: none;
+}

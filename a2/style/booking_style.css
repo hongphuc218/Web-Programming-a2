@@ -1,0 +1,205 @@
+html {
+    scroll-behavior: smooth;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-areas: 
+    "header header header"
+    "nav nav nav"
+    "main main main"
+    "footer footer footer";
+    gap: 10px;
+    background-color:#33CCFF;
+}
+
+.grid-container header {
+    grid-area: header;
+    background-color:#00AAFF;
+    text-align: center;
+    padding:10px 100px;
+}
+
+header h1 {
+    display: inline;
+    font-family: 'Comfortaa',Arial,sans-serif;
+    color: #FFD400;
+    font-size: 70px;
+}
+
+header img {
+    height: 80px;
+    vertical-align: middle;
+    float: left;
+}
+
+.grid-container nav {
+    grid-area: nav;
+    font-family: 'Comfortaa',Arial,sans-serif;
+    font-weight: bold;
+    background-color:#FFD400;
+    text-align: center;
+    position: sticky;
+    top: 0;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 15px 0;
+}
+
+nav li {
+    display: inline;
+}
+
+nav li a {
+    text-decoration: none;
+    color: black;
+    padding: 15px 10px;
+}
+
+nav li a:hover:not(.active) {
+    background-color: #33CCFF;
+    transition: 0.5s;
+}
+
+.active {
+    background-color: #33CCFF;
+}
+
+.grid-container main {
+    grid-area: main;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #62B8FC;
+    padding: 0 100px;
+}
+
+main h2 {
+    font-family: 'Comfortaa',Arial,sans-serif;
+    font-size: 40px;
+}
+
+.error {
+    color: #FF0000;
+}
+
+.success {
+    color: green;
+}
+
+form {
+    background-color: white;
+    border: solid 2px #012949;
+    padding: 0 100px;
+}
+
+form h2 {
+    text-align: center;
+}
+
+form div {
+    margin-bottom: 10px;
+}
+
+label {
+    display: inline-block;
+    width: 150px;
+}
+
+#id {
+    text-transform: uppercase;
+}
+
+.Pill-item input[type="checkbox"] {
+    display: none;
+}
+
+.Pill-item-second input[type="checkbox"] {
+    display: none;
+}
+
+.Pill-item input[type="checkbox"]:checked + .Pill-label {
+    background-color: #1da1f2;
+    border: 1px solid #1da1f2;
+    color: white;
+}
+
+.Pill-item-second input[type="checkbox"]:checked + .Pill-label-second {
+    background-color: #FFD400;
+    border: 1px solid #FFD400;
+    color: white;
+}
+
+.Pill-item, .Pill-item-second {
+    cursor: pointer;
+    display: inline-block;
+    margin: 5px 0;
+}
+
+
+.Pill-label {
+    text-align: center;
+    border: 2px solid #1da1f2;
+    border-radius: 15px;
+    color: #1c94e0;
+    display: block;
+    padding: 5px 10px;
+}
+
+.Pill-label-second {
+    text-align: center;
+    border: 2px solid #FFD400;
+    border-radius: 15px;
+    color: #FFD400;
+    display: block;
+    padding: 5px 10px;
+}
+
+#description {
+    padding: 0;
+    margin: 0;
+}
+
+ol li {
+    display: none;
+}
+
+.active-des {
+    display: block;
+    background-color: white;
+    padding: 0;
+    left: 0;
+}
+
+.grid-container footer {
+    grid-area: footer;
+    background-color:#006EE9;
+}
+
+footer span {
+    color: white;
+    vertical-align: middle;
+    margin-left: 100px;
+}
+
+footer ul {
+    list-style-type: none;
+    float: right;
+    margin-right: 100px;
+}
+
+footer li {
+    display: inline;
+}
+
+footer li a {
+    text-decoration: none;
+    color: white;
+    padding: 0 5px;
+    border-left: solid 1px white;
+}
+
+footer li:first-child a {
+    border: none;
+}
